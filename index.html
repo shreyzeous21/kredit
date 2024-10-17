@@ -24,6 +24,15 @@
         font-weight: 400;
         font-style: normal;
       }
+      .icon {
+        width: 50px; /* Adjust size as needed */
+        height: 50px; /* Adjust size as needed */
+        fill: white; /* Ensure the icon color is white */
+      }
+
+      section {
+        padding: 20px; /* Add padding to the section */
+      }
     </style>
   </head>
   <body class="merriweather-regular bg-white">
@@ -31,13 +40,45 @@
     <header class="h-[10vh]"></header>
     <!-- header section end -->
 
+    <!-- quick banner orange start -->
+    <section
+      class="h-auto lg:h-[30vh] bg-[#f26530] mx-auto flex flex-col md:flex-row items-center justify-around p-4"
+    >
+      <div class="hidden lg:flex flex-row items-center mb-4 md:mb-0">
+        <img src="/loan.svg" alt="Loan Icon" class="icon" />
+      </div>
+      <div class="border-l border-white h-12 mx-4 hidden md:block"></div>
+      <div class="flex flex-row items-center mb-4 md:mb-0">
+        <img src="/loan.svg" alt="Loan Icon" class="icon" />
+        <span class="ml-2 text-white">QUICK & EASY LOAN APPROVALS</span>
+      </div>
+      <div class="border-l border-white h-12 mx-4 hidden md:block"></div>
+
+      <!-- Vertical line separator visible only on medium screens and up -->
+
+      <div class="flex flex-row items-center mb-4 md:mb-0">
+        <img src="/loan.svg" alt="Access Icon" class="icon" />
+        <span class="ml-2 text-white">EASY ACCESS TO FUNDS</span>
+      </div>
+
+      <div class="border-l border-white h-12 mx-4 hidden md:block"></div>
+      <!-- Vertical line separator visible only on medium screens and up -->
+
+      <div class="flex flex-row items-center mb-4 md:mb-0">
+        <img src="/loan.svg" alt="Flexible Icon" class="icon" />
+        <span class="ml-2 text-white">FLEXIBLE REPAYMENT OPTIONS</span>
+      </div>
+    </section>
+
+    <!-- quick banner orange end -->
+
     <!-- loan types start -->
     <section
       class="h-auto bg-contain bg-center bg-gray-800 flex flex-col justify-center items-center p-4 text-center"
     >
       <!-- style="background-image: url('/bg.avif'); background-repeat: no-repeat" -->
       <!-- Heading -->
-      <h1 class="text-3xl md:text-5xl font-bold text-white text-center mt-10">
+      <h1 class="text-3xl md:text-5xl font-bold text-white text-center mb-10 mt-10">
         Simplifying Lending for <br />Industries of Bharat.
       </h1>
 
