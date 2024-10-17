@@ -32,37 +32,54 @@
     <!-- header section end -->
 
     <section
-      class="h-[40vh] bg-[#003c58] flex justify-center items-center flex-col p-4 lg:p-0"
+      class="h-[45vh] bg-[#003c58] flex justify-center items-center flex-col p-4 lg:p-0"
     >
-      <h2 class="text-white text-3xl lg:text-6xl text-center mb-6">
+      <h2 class="text-white text-3xl lg:text-5xl text-center mb-8">
         Apply in Three Easy Steps
       </h2>
-      <div
-        class="bg-white p-4 rounded-lg shadow-lg w-full max-w-3xl flex flex-col lg:flex-row items-center lg:space-x-4 space-y-4 lg:space-y-0"
-      >
-        <input
-          type="text"
-          class="border border-gray-300 p-2 rounded-lg w-full lg:flex-1 border-none outline-none"
-          placeholder="Name"
-        />
-        <input
-          type="number"
-          class="border border-gray-300 p-2 rounded-lg w-full lg:flex-1 border-none outline-none"
-          placeholder="Number"
-        />
-        <select
-          class="border border-gray-300 p-2 rounded-lg w-full lg:flex-1 border-none"
-        >
-          <option value="">Select loan type</option>
-          <option value="personal">Personal Loan</option>
-          <option value="home">Home Loan</option>
-          <option value="auto">Auto Loan</option>
-          <option value="student">Student Loan</option>
-        </select>
-
-        <button
-          class="w-full lg:w-auto px-4 py-2 text-white bg-blue-700 hover:bg-blue-800"
-        >
+      <div class="bg-white p-4 rounded-lg shadow-lg w-full max-w-3xl flex flex-col lg:flex-row items-center lg:space-x-4 space-y-4 lg:space-y-0">
+        <!-- Name Input with Divider -->
+        <div class="flex items-center w-full lg:flex-1">
+          <input
+            type="text"
+            class="border-none outline-none p-2 w-full rounded-lg"
+            placeholder="Name"
+          />
+        </div>
+        
+        <!-- Divider for large screens -->
+        <div class="hidden lg:block lg:h-full lg:w-px lg:bg-gray-300"></div>
+        
+        <!-- Number Input with Divider -->
+        <div class="flex items-center w-full lg:flex-1">
+          <input
+            type="number"
+            class="border-none outline-none p-2 w-full rounded-lg"
+            placeholder="Number"
+          />
+        </div>
+        
+        <!-- Divider for large screens -->
+        <div class="hidden lg:block lg:h-full lg:w-px lg:bg-gray-300"></div>
+        
+        <!-- Loan Type Select with Divider -->
+        <div class="flex items-center w-full lg:flex-1">
+          <select
+            class="border-none outline-none p-2 w-full rounded-lg"
+          >
+            <option value="">Loan type</option>
+            <option value="personal">Personal Loan</option>
+            <option value="home">Home Loan</option>
+            <option value="auto">Auto Loan</option>
+            <option value="student">Student Loan</option>
+          </select>
+        </div>
+        
+        <!-- Divider for large screens -->
+        <div class="hidden lg:block lg:h-full lg:w-px lg:bg-gray-300"></div>
+        
+        <!-- Apply Button -->
+        <button class="w-full lg:w-auto px-4 py-2 text-white bg-[#003c58] rounded-lg">
           Apply For Loan
         </button>
       </div>
