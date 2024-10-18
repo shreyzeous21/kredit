@@ -34,3 +34,9 @@ updateTestimonial();
 setInterval(updateTestimonial, 4000);
 //   testi end
 
+
+
+function toggleMenu() {
+  const mobileMenu = document.getElementById('mobileMenu');
+  mobileMenu.classList.toggle('hidden');
+}

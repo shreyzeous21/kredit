@@ -29,7 +29,7 @@
   </head>
   <body class="merriweather-regular">
     <!-- header section start -->
-    <header class="top-0 px-4 z-50">
+    <header class="top-0 px-4 z-50 w-full shadow-md">
       <div class="container mx-auto flex justify-between items-center">
         <!-- Left section: Logo -->
         <div class="flex items-center">
@@ -38,7 +38,11 @@
 
         <!-- Hamburger menu (for mobile) -->
         <div class="flex md:hidden">
-          <button id="hamburger" class="text-black focus:outline-none">
+          <button
+            id="hamburger"
+            class="text-black focus:outline-none"
+            onclick="toggleMenu()"
+          >
             <svg
               class="w-6 h-6"
               fill="none"
@@ -55,27 +59,36 @@
           </button>
         </div>
 
-        <!-- Center section: Menu -->
+        <!-- Center section: Menu (hidden on mobile, visible on desktop) -->
         <nav
+          id="navMenu"
           class="hidden md:flex h-[12vh] w-[50vw] mt-5 justify-center bg-orange-600"
         >
           <ul
-            class="flex justify-evenly mx-auto lg:px-0 py-6 w-full text-white"
+            class="flex flex-col md:flex-row justify-evenly mx-auto lg:px-0 py-6 w-full text-white"
           >
-            <li class="flex-1 text-center border-r border-white">
+            <li
+              class="flex-1 text-center border-b md:border-b-0 md:border-r border-white"
+            >
               <a href="#home" class="hover:text-secondary font-bold">Home</a>
             </li>
-            <li class="flex-1 text-center border-r border-white">
+            <li
+              class="flex-1 text-center border-b md:border-b-0 md:border-r border-white"
+            >
               <a href="#aboutus" class="hover:text-secondary font-bold"
                 >About</a
               >
             </li>
-            <li class="flex-1 text-center border-r border-white">
+            <li
+              class="flex-1 text-center border-b md:border-b-0 md:border-r border-white"
+            >
               <a href="#results" class="hover:text-secondary font-bold"
                 >Services</a
               >
             </li>
-            <li class="flex-1 text-center border-r border-white">
+            <li
+              class="flex-1 text-center border-b md:border-b-0 md:border-r border-white"
+            >
               <a href="#reviews" class="hover:text-secondary font-bold">Blog</a>
             </li>
             <li class="flex-1 text-center">
@@ -86,15 +99,43 @@
           </ul>
         </nav>
 
-        <!-- Right section: Buttons (for desktop) -->
-        <div class="hidden lg:flex lg:flex-col items-center">
-          <a href="#" class="text-black font-semibold rounded inline-block"
-            >Call for more info</a
-          >
-          <a href="#" class="text-black font-semibold rounded inline-block"
-            >+91 1234567890</a
-          >
+        <!-- Right section: Buttons (visible on desktop) -->
+        <div class="hidden lg:flex lg:flex-row items-center">
+          <img src="/call.svg" class="bg-blue-900 rounded-full p-1" alt="" />
+          <div class="flex flex-col">
+            <a href="#" class="text-black font-semibold rounded inline-block"
+              >Call for more info</a
+            >
+            <a href="#" class="text-black font-semibold rounded inline-block"
+              >+91 99674 88300</a
+            >
+          </div>
         </div>
+      </div>
+
+      <!-- Mobile dropdown menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-orange-600 w-full py-5">
+        <ul class="text-white flex flex-col space-y-4 items-center">
+          <li>
+            <a href="#home" class="hover:text-secondary font-bold">Home</a>
+          </li>
+          <li>
+            <a href="#aboutus" class="hover:text-secondary font-bold">About</a>
+          </li>
+          <li>
+            <a href="#results" class="hover:text-secondary font-bold"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#reviews" class="hover:text-secondary font-bold">Blog</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="hover:text-secondary font-bold"
+              >Contact</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <!-- header section end -->
@@ -129,7 +170,7 @@
     <!-- additional content start -->
     <div class="bg-[#e3e8ed] h-auto w-full flex justify-center">
       <div
-        class="lg:w-[60vw] w-full flex bg-orange-600 lg:h-10 justify-center lg:mb-10"
+        class="lg:w-[60vw] w-full flex bg-orange-600 lg:h-10 justify-center lg:mb-10 mb-1"
       >
         <!-- Content for the additional section -->
       </div>
