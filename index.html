@@ -11,13 +11,14 @@
       rel="stylesheet"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
     />
     <title>Kredit venture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
       .merriweather-regular {
         font-family: "Merriweather", serif;
@@ -29,10 +30,7 @@
         height: 50px; /* Adjust size as needed */
         fill: white; /* Ensure the icon color is white */
       }
-
-      section {
-        padding: 20px; /* Add padding to the section */
-      }
+      
     </style>
   </head>
   <body class="merriweather-regular bg-white">
@@ -317,16 +315,17 @@
         Meet Our Team
       </h2>
       <div
-        class="grid mb-36 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto"
+        id="carousel"
+        class="grid mb-36 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1 lg:w-[50vw] mx-auto"
       >
         <!-- Team Member Card -->
         <div
-          class="bg-[#003e57] text-white p-8 rounded-lg flex flex-col items-center shadow-lg"
+          class="custom carousel-item bg-[#003e57] text-white p-8 lg:mx-0 rounded-lg flex flex-col items-center shadow-lg snap-center lg:w-[20vw]"
         >
           <img
             src="https://via.placeholder.com/120"
             alt="Saif Hasan"
-            class="w-40 h-40 rounded-full mb-4"
+            class="w-30 h-30 rounded-full mb-4"
           />
           <h3 class="text-lg font-semibold">Saif Hasan</h3>
           <p class="text-sm mb-4">FOUNDER & CEO</p>
@@ -343,10 +342,60 @@
             </a>
           </div>
         </div>
-
         <!-- Additional Team Member Cards -->
-        <!-- Similar structure as above -->
+        <!-- Team Member Card -->
         <div
+          class=" custom carousel-item bg-[#003e57] text-white p-8 lg:mx-0 rounded-lg flex flex-col items-center shadow-lg snap-center lg:w-[20vw]"
+        >
+          <img
+            src="https://via.placeholder.com/120"
+            alt="Saif Hasan"
+            class="w-30 h-30 rounded-full mb-4"
+          />
+          <h3 class="text-lg font-semibold">Saif Hasan</h3>
+          <p class="text-sm mb-4">FOUNDER & CEO</p>
+          <div class="flex flex-col items-center lg:flex-row lg:gap-4">
+            <button
+              class="bg-transparent border border-white text-white py-1 px-4 rounded-full text-sm mb-2"
+            >
+              Read More
+            </button>
+            <a href="#" class="text-teal-200">
+              <i
+                class="fab fa-linkedin-in text-orange-600 p-2 lg:mb-2 bg-white rounded-full"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <!-- Additional Team Member Cards -->
+        <!-- Team Member Card -->
+        <div
+          class=" custom carousel-item bg-[#003e57] text-white p-8 lg:mx-0 rounded-lg flex flex-col items-center shadow-lg snap-center lg:w-[20vw]"
+        >
+          <img
+            src="https://via.placeholder.com/120"
+            alt="Saif Hasan"
+            class="w-30 h-30 rounded-full mb-4"
+          />
+          <h3 class="text-lg font-semibold">Saif Hasan</h3>
+          <p class="text-sm mb-4">FOUNDER & CEO</p>
+          <div class="flex flex-col items-center lg:flex-row lg:gap-4">
+            <button
+              class="bg-transparent border border-white text-white py-1 px-4 rounded-full text-sm mb-2"
+            >
+              Read More
+            </button>
+            <a href="#" class="text-teal-200">
+              <i
+                class="fab fa-linkedin-in text-orange-600 p-2 lg:mb-2 bg-white rounded-full"
+              ></i>
+            </a>
+          </div>
+        </div>
+        <!-- Additional Team Member Cards -->
+
+        <!-- Similar structure as above -->
+        <!-- <div
           class="bg-[#003e57] text-white p-8 rounded-lg flex flex-col items-center shadow-lg"
         >
           <img
@@ -392,7 +441,7 @@
               ></i>
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- our team end-->
@@ -400,7 +449,7 @@
     <!-- testimonial section start -->
     <section class="bg-[#eae9e7] lg:my-12 h-[60vh]">
       <div
-        class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
+        class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-8 lg:px-6"
       >
         <figure class="max-w-screen-md mx-auto">
           <svg
@@ -418,22 +467,22 @@
             <p
               class="text-2xl font-medium text-[#014260]"
               id="testimonial-quote"
-            >
-              "Flowbite is just awesome. It contains tons of predesigned
-              components and pages starting from login screen to complex
-              dashboard. Perfect choice for your next SaaS application."
-            </p>
+            ></p>
           </blockquote>
           <figcaption class="flex items-center justify-center mt-6 space-x-3">
             <img
+              id="testimonial-img"
               class="w-6 h-6 rounded-full"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
               alt="profile picture"
+              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
             />
             <div
               class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700"
             >
-              <div class="pr-3 font-medium text-[#014260]">Micheal Gough</div>
+              <div
+                id="testimonial-author"
+                class="pr-3 font-medium text-[#014260]"
+              ></div>
             </div>
           </figcaption>
         </figure>
@@ -491,17 +540,17 @@
       <div class="container mx-auto">
         <!-- Logo and Tagline -->
         <div
-          class="flex h-[10vh] w-[40vw] lg:justify-start justify-center mx-auto lg:mb-10 lg:bg-inherit bg-white"
+          class="flex h-[10vh] w-[52vw] lg:justify-start justify-center mx-auto lg:bg-inherit lg:mb-10 bg-white"
         >
           <img src="https://kreditventure.com/logo.png" alt="" />
         </div>
 
         <!-- Navigation Links -->
         <hr
-          class="lg:w-[42vw] my-4 h-[1px] mx-3 lg:mx-auto bg-white border-1"
+          class="lg:w-[55vw] my-4 h-[1px] mx-3 lg:mx-auto bg-white border-1"
         />
         <nav
-          class="flex flex-col lg:flex-row lg:justify-evenly justify-center lg:mx-64"
+          class="flex flex-col lg:flex-row lg:justify-around justify-center lg:mx-20"
         >
           <div class="text-center text-sm my-1 lg:my-0">
             <a href="#" class="mx-1">Home</a> |
@@ -544,10 +593,8 @@
           </div>
         </nav>
         <hr
-          class="lg:w-[42vw] my-4 h-[1px] mx-3 lg:mx-auto bg-white border-1"
+          class="lg:w-[55vw] my-4 h-[1px] mx-3 lg:mx-auto bg-white border-1"
         />
-
-        <!-- Footer Text -->
         <p class="text-center text-sm">
           Kredit Venture (JADS Services Private Limited) NBFC Registration No:
           N-14 03239
@@ -555,5 +602,6 @@
       </div>
     </footer>
     <!-- footer end -->
+    <script src="/script.js"></script>
   </body>
 </html>
