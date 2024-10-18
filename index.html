@@ -139,9 +139,9 @@
     <!-- about us start -->
     <section class="bg-[#e3e8eb] text-[#014260] h-auto mx-auto relative z-10">
       <div class="flex lg:flex-row flex-col">
-        <div class="h-auto lg:w-1/2">
+        <div class="h-auto lg:w-1/2 w-full">
           <h1
-            class="lg:text-5xl text-4xl flex lg:justify-start justify-center my-5 mx-20"
+            class="lg:text-5xl text-3xl flex lg:justify-start justify-center my-5 lg:mx-20 mx-5"
           >
             About Us
           </h1>
@@ -169,18 +169,18 @@
             </button>
           </div>
         </div>
-        <div class="relative h-[80vh] mx-auto lg:w-1/2">
+        <div class="relative h-[50vh] lg:h-[80vh] mx-auto lg:w-1/2 w-full">
           <!-- First Image -->
           <img
             src="/enjoying-street-food-fest.jpg"
             alt=""
-            class="w-full h-full object-cover"
+            class="w-full lg:h-[90vh] h-full lg:object-cover object-contain"
           />
 
           <!-- Second Image (Overlapping the first) -->
           <img
             src="/chicken-farm-scene-with-poultry-people-(1).jpg"
-            class="absolute top-0 left-[-4rem] h-[40vh] w-[60vh] z-20"
+            class="absolute top-0 lg:top-1 lg:left-[-3rem] left-[30%] lg:translate-x-0 -translate-x-[50%] h-[20vh] lg:h-[40vh] w-[30vh] lg:w-[60vh] z-20"
           />
         </div>
       </div>
@@ -195,19 +195,22 @@
         <hr class="bg-black mt-5 h-[4px] lg:w-[10vw] w-[50%]" />
       </div>
 
-
-      <div class="h-auto grid py-10 mx-10 grid-cols-3 grid-rows-4 gap-6">
+      <div
+        class="h-auto grid py-10 mx-5 sm:mx-10 grid-cols-1 lg:grid-cols-3 lg:grid-rows-4 gap-6"
+      >
         <!-- First Section - Secured Business Loans -->
-        <div class="row-span-2">
+        <div class="row-span-1 lg:row-span-2">
           <img
             src="/8aceda335ecd3432354c005158d21f8a.png"
-            class="mx-auto rounded-lg h-[20rem] w-[20rem] object-cover"
+            class="mx-auto rounded-lg h-[16rem] w-[16rem] lg:h-[20rem] lg:w-[20rem] object-cover"
             alt="Secured Business Loans"
           />
         </div>
-        <div class="row-span-2">
-          <h3 class="text-2xl font-semibold mb-4">Secured Business Loans</h3>
-          <p class="text-gray-700 mb-4 text-start">
+        <div class="row-span-1 lg:row-span-2">
+          <h3 class="text-2xl font-semibold mb-4 text-center lg:text-left">
+            Secured Business Loans
+          </h3>
+          <p class="text-gray-700 mb-4 text-center lg:text-left">
             Our secured business loans provide borrowers with the necessary
             capital for refinancing existing debt, purchasing property or
             equipment, or improving business operations. Our flexible repayment
@@ -216,35 +219,46 @@
             and long-term business navigation and strategic initiatives to
             manage cash flow and financial stability.
           </p>
-          <button
-            type="button"
-            class="text-black ring-1 ring-orange-600 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-1"
-          >
-            Know More
-          </button>
+          <div class="flex justify-center lg:justify-start">
+            <button
+              type="button"
+              class="text-black ring-1 ring-orange-600 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-1"
+            >
+              Know More
+            </button>
+          </div>
         </div>
 
         <!-- Second Section - Unsecured Business Loans -->
-        <div class="row-span-2 col-start-2 row-start-3 py-10">
-          <h3 class="text-2xl font-semibold mb-4">Unsecured Business Loans</h3>
-          <p class="text-gray-700 mb-4 text-start">
+        <div
+          class="row-span-1 lg:row-span-2 col-start-1 lg:col-start-2 row-start-3 py-10"
+        >
+          <h3 class="text-2xl font-semibold mb-4 text-center lg:text-left">
+            Unsecured Business Loans
+          </h3>
+          <p class="text-gray-700 mb-4 text-center lg:text-left">
             We offer unsecured business loans to companies, helping them stay
             competitive in a fast-paced business market that demands quick
             thinking, swift action, and efficient financial solutions. With our
             unsecured business loans, companies can access funds to meet their
             business needs with a quick turnaround time.
           </p>
-          <button
-            type="button"
-            class="text-black ring-1 ring-orange-600 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-1"
-          >
-            Know More
-          </button>
+          <div class="flex justify-center lg:justify-start">
+            <button
+              type="button"
+              class="text-black ring-1 ring-orange-600 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-1"
+            >
+              Know More
+            </button>
+          </div>
         </div>
-        <div class="row-span-2 col-start-3 row-start-3 py-5">
+
+        <div
+          class="row-span-1 lg:row-span-2 col-start-1 lg:col-start-3 row-start-3 py-5"
+        >
           <img
             src="/8aceda335ecd3432354c005158d21f8a.png"
-            class="-mx-auto rounded-lg h-[20rem] w-[20rem] object-cover"
+            class="mx-auto rounded-lg h-[16rem] w-[16rem] lg:h-[20rem] lg:w-[20rem] object-cover"
             alt="Unsecured Business Loans"
           />
         </div>
