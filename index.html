@@ -32,9 +32,128 @@
       }
     </style>
   </head>
-  <body class="merriweather-regular bg-white">
+  <body class="merriweather-regular">
     <!-- header section start -->
-    <header class="h-[10vh] bg-red-900">working</header>
+    <header class="top-0 px-4 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Left section: Logo -->
+        <div class="flex items-center">
+          <img src="/logo.png" alt="Logo" class="h-20 w-auto mr-4" />
+        </div>
+
+        <!-- Hamburger menu (for mobile) -->
+        <div class="flex md:hidden">
+          <button id="hamburger" class="text-black focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Center section: Menu -->
+        <nav
+  class="hidden md:flex h-[12vh] w-[50vw] mt-5 justify-center bg-orange-600"
+>
+  <ul
+    class="flex justify-evenly mx-auto lg:px-0 py-6 w-full text-white"
+  >
+    <li class="flex-1 text-center border-r border-white">
+      <a href="#home" class="hover:text-secondary font-bold">Home</a>
+    </li>
+    <li class="flex-1 text-center border-r border-white">
+      <a href="#aboutus" class="hover:text-secondary font-bold">About</a>
+    </li>
+    <li class="flex-1 text-center border-r border-white">
+      <a href="#results" class="hover:text-secondary font-bold">Services</a>
+    </li>
+    <li class="flex-1 text-center border-r border-white">
+      <a href="#reviews" class="hover:text-secondary font-bold">Blog</a>
+    </li>
+    <li class="flex-1 text-center">
+      <a href="#portfolio" class="hover:text-secondary font-bold">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+
+        <!-- Right section: Buttons (for desktop) -->
+        <div class="hidden lg:flex lg:flex-col items-center">
+          <a href="#" class="text-black font-semibold rounded inline-block"
+            >Call for more info</a
+          >
+          <a href="#" class="text-black font-semibold rounded inline-block"
+            >+91 1234567890</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <nav
+      id="mobile-menu-placeholder"
+      class="mobile-menu hidden flex-col items-center space-y-8 md:hidden px-8"
+    >
+      <ul class="w-full text-center">
+        <li class="border-b border-gray-300pb-4 pt-4">
+          <a href="#home" class="hover:text-secondary font-bold">Home</a>
+        </li>
+        <li class="border-b border-gray-300 pb-4 pt-4">
+          <a href="#aboutus" class="hover:text-secondary font-bold">About</a>
+        </li>
+        <li class="border-b border-gray-300 pb-4 pt-4">
+          <a href="#results" class="hover:text-secondary font-bold">Services</a>
+        </li>
+        <li class="border-b border-gray-300 pb-4 pt-4">
+          <a href="#reviews" class="hover:text-secondary font-bold">Blog</a>
+        </li>
+        <li class="border-b border-gray-300 pb-4 pt-4">
+          <a href="#portfolio" class="hover:text-secondary font-bold"
+            >Contact</a
+          >
+        </li>
+        <li class="border-b border-gray-300 pb-4 pt-4">
+          <a href="#team" class="hover:text-secondary font-bold">Team</a>
+        </li>
+        <li class="pb-4 pt-4">
+          <a href="#contact" class="hover:text-secondary font-bold">Contact</a>
+        </li>
+      </ul>
+      <div class="flex flex-col mt-6 space-y-2 items-center">
+        <a
+          href="#"
+          class="bg-green-500 hover:bg-blue-500 text-white font-semibold px-4 py-2 rounded inline-block flex items-center justify-center min-w-[110px]"
+          >Github</a
+        >
+        <a
+          href="#"
+          class="bg-blue-500 hover:bg-green-500 text-white font-semibold px-4 py-2 rounded inline-block flex items-center justify-center min-w-[110px]"
+          >Download</a
+        >
+      </div>
+    </nav>
+    <!-- <div
+      class="bg-orange-600 lg:flex lg:mt-10 h-[10vh] lg:w-[55vw] lg:py-5 text-white"
+    >
+      <div
+        class="hidden lg:flex items-center justify-evenly w-full text-xl mx-auto lg:my-0"
+      >
+        <a href="#" class="mx-1">Home</a> |
+        <a href="#" class="mx-1">About</a> |
+        <a href="#" class="mx-1">Services</a> |
+        <a href="#" class="mx-1">Blog</a> |
+        <a href="#" class="mx-1">Contact</a>
+      </div>
+    </div> -->
     <!-- header section end -->
 
     <!-- hero section start -->
@@ -45,10 +164,10 @@
         <div class="justify-center flex lg:flex-row">
           <img
             src="/Frame.jpg"
-            class="absolute  w-full h-full object-cover top-0 left-0"
+            class="absolute w-full h-full object-cover top-0 left-0"
             alt=""
           />
-          
+        </div>
       </div>
     </div>
     <!-- hero section end -->
@@ -56,7 +175,7 @@
     <!-- orange start -->
     <div class="bg-[#e3e8ed] h-auto w-full flex justify-center">
       <div
-        class="bg-orange-600 w-full flex justify-center mb-2 flex h-[10vh] lg:w-[55vw]  py-5 lg:p-2 text-cente flex text-white lg:text-5xl text-2xl"
+        class="bg-orange-600 w-full flex justify-center mb-2 flex h-[10vh] lg:w-[55vw] py-5 lg:p-2 text-cente flex text-white lg:text-5xl text-2xl"
       >
         Simplify Lending For Bharat
       </div>
