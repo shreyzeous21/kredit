@@ -126,7 +126,7 @@
     <!-- orange end -->
 
     <!-- about us start -->
-    <section class="bg-[#e3e8eb] text-[#014260] h-auto mx-auto">
+    <section class="bg-[#e3e8eb] text-[#014260] h-auto mx-auto relative z-10">
       <div class="flex lg:flex-row flex-col">
         <div class="h-auto lg:w-1/2">
           <h1
@@ -135,7 +135,7 @@
             About Us
           </h1>
           <div class="lg:mx-20 mx-5 h-auto">
-            <p class="">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Consequatur mollitia reprehenderit magni, illum illo harum
               voluptatum voluptatem natus dolores beatae placeat neque
@@ -152,18 +152,29 @@
           <div class="my-10 justify-center h-auto flex">
             <button
               type="button"
-              class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              class="text-white bg-[#014260] focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-1"
             >
               Read More
             </button>
           </div>
         </div>
-        <div class="h-[80vh] mx-auto lg:w-1/2">
-          <img src="/enjoying-street-food-fest.jpg" alt="" />
-          <img src="/enjoying-street-food-fest.jpg" class="h-10 w-10" />
+        <div class="relative h-[80vh] mx-auto lg:w-1/2">
+          <!-- First Image -->
+          <img
+            src="/enjoying-street-food-fest.jpg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+
+          <!-- Second Image (Overlapping the first) -->
+          <img
+            src="/chicken-farm-scene-with-poultry-people-(1).jpg"
+            class="absolute top-0 left-[-4rem] h-[40vh] w-[60vh] z-20"
+          />
         </div>
       </div>
     </section>
+
     <!-- about us end -->
 
     <!-- what we offer start -->
