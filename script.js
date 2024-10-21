@@ -3,18 +3,18 @@ const testimonials = [
     quote:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque alias nisi enim corrupti aliquid veniam eaque, voluptatum beatae aliquam ea sit nobis cupiditate natus dignissimos ducimus hic voluptate inventore. Facilis!",
     author: "John Doe",
-    img: "https://example.com/image1.jpg",
+    img: "/Layer-21.png",
   },
   {
     quote:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque alias nisi enim corrupti aliquid veniam eaque, voluptatum beatae aliquam",
     author: "Jane Smith",
-    img: "https://example.com/image2.jpg",
+    img: "/Layer-21.png",
   },
   {
     quote: "Highly recommend to everyone!",
     author: "Michael Johnson",
-    img: "https://example.com/image3.jpg",
+    img: "/Layer-21.png",
   },
 ];
 
