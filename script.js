@@ -1,37 +1,45 @@
-// testi start
 const testimonials = [
   {
-    quote:
-      "Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application.",
-    name: "Michael Gough",
+    quote: "I recently used this website for a purchase and I was extremely satisfied with the ease of use and the variety of options available. The checkout process was seamless and the delivery was prompt.",
+    author: "Jane Doe",
     img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png",
   },
   {
-    quote:
-      "This platform is a game changer. The components are incredibly easy to use and adapt, saving us so much development time!",
-    name: "Sarah Johnson",
-    img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sarah-johnson.png",
+    quote: "The customer service was excellent! I had a question about my order, and they responded quickly and helpfully. Highly recommend!",
+    author: "John Smith",
+    img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/john-smith.png",
   },
   {
-    quote:
-      "Highly recommend! Flowbite has streamlined our design process with its comprehensive library of components.",
-    name: "James Smith",
-    img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/james-smith.png",
+    quote: "A fantastic shopping experience! The products are top-notch and delivery was faster than expected. Will definitely shop here again!",
+    author: "Alice Johnson",
+    img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/alice-johnson.png",
   },
 ];
+
 let currentIndex = 0;
+
 function updateTestimonial() {
-  const testimonial = testimonials[currentIndex];
-  document.getElementById("testimonial-quote").textContent = testimonial.quote;
-  document.querySelector("figcaption img").src = testimonial.img;
-  document.querySelector("figcaption .pr-3").textContent = testimonial.name;
-  // Update index for the next testimonial
-  currentIndex = (currentIndex + 1) % testimonials.length;
+  const testimonialQuote = document.getElementById("testimonial-quote");
+  const testimonialAuthor = document.getElementById("testimonial-author");
+  const testimonialImg = document.getElementById("testimonial-img");
+
+  testimonialQuote.textContent = testimonials[currentIndex].quote;
+  testimonialAuthor.textContent = testimonials[currentIndex].author;
+  testimonialImg.src = testimonials[currentIndex].img;
 }
-// Initial update
+
+document.getElementById("next-button").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % testimonials.length; // Loop back to start
+  updateTestimonial();
+});
+
+document.getElementById("prev-button").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length; // Loop to end
+  updateTestimonial();
+});
+
+// Initialize with the first testimonial
 updateTestimonial();
-// Set an interval to update the testimonial every 2 seconds
-setInterval(updateTestimonial, 4000);
 //   testi end
 
 

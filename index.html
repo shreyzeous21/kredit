@@ -598,12 +598,8 @@
     <!-- our team end-->
 
     <!-- testimonial section start -->
-    <section
-      class="bg-[#eae9e7] lg:my-12 lg:h-[60vh] bg-[url('/page01_parallax01.png')]"
-    >
-      <div
-        class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-12 lg:px-6"
-      >
+    <section class="bg-[#eae9e7] lg:my-12  my-10 lg:h-[70vh] bg-[url('/page01_parallax01.png')]">
+      <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-12 lg:px-6">
         <figure class="max-w-screen-md mx-auto">
           <svg
             class="h-20 mx-auto mb-4 -rotate-180 text-gray-400"
@@ -617,28 +613,36 @@
             />
           </svg>
           <blockquote>
-            <p
-              class="text-2xl font-medium text-[#014260]"
-              id="testimonial-quote"
-            ></p>
+            <p class="text-2xl font-medium text-[#014260] break-words" id="testimonial-quote"></p>
           </blockquote>
           <figcaption class="flex items-center justify-center mt-6 space-x-3">
             <img
               id="testimonial-img"
-              class="w-6 h-6 rounded-full"
+              class="w-12 h-12 rounded-full" 
               alt="profile picture"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
             />
-            <div
-              class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700"
-            >
-              <div
-                id="testimonial-author"
-                class="pr-3 font-medium text-[#014260]"
-              ></div>
+            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+              <div id="testimonial-author" class="pr-3 font-medium text-[#014260]"></div>
             </div>
           </figcaption>
         </figure>
+    
+        <!-- Navigation Buttons -->
+        <div class="mt-6 flex justify-between items-center">
+          <button
+            id="prev-button"
+            class="px-4 py-2 text-white bg-[#014260] rounded hover:bg-blue-600"
+          >
+            &lt;-
+          </button>
+          <button
+            id="next-button"
+            class="px-4 py-2 text-white bg-[#014260] rounded hover:bg-blue-600"
+          >
+            -&gt;
+          </button>
+        </div>
       </div>
     </section>
 
