@@ -1,18 +1,20 @@
 const testimonials = [
   {
-    quote: "I recently used this website for a purchase and I was extremely satisfied with the ease of use and the variety of options available. The checkout process was seamless and the delivery was prompt.",
-    author: "Jane Doe",
-    img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque alias nisi enim corrupti aliquid veniam eaque, voluptatum beatae aliquam ea sit nobis cupiditate natus dignissimos ducimus hic voluptate inventore. Facilis!",
+    author: "John Doe",
+    img: "https://example.com/image1.jpg",
   },
   {
-    quote: "The customer service was excellent! I had a question about my order, and they responded quickly and helpfully. Highly recommend!",
-    author: "John Smith",
-    img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/john-smith.png",
+    quote:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque alias nisi enim corrupti aliquid veniam eaque, voluptatum beatae aliquam",
+    author: "Jane Smith",
+    img: "https://example.com/image2.jpg",
   },
   {
-    quote: "A fantastic shopping experience! The products are top-notch and delivery was faster than expected. Will definitely shop here again!",
-    author: "Alice Johnson",
-    img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/alice-johnson.png",
+    quote: "Highly recommend to everyone!",
+    author: "Michael Johnson",
+    img: "https://example.com/image3.jpg",
   },
 ];
 
@@ -22,29 +24,36 @@ function updateTestimonial() {
   const testimonialQuote = document.getElementById("testimonial-quote");
   const testimonialAuthor = document.getElementById("testimonial-author");
   const testimonialImg = document.getElementById("testimonial-img");
+  const testimonialCard = document.getElementById("testimonial-card");
 
-  testimonialQuote.textContent = testimonials[currentIndex].quote;
-  testimonialAuthor.textContent = testimonials[currentIndex].author;
-  testimonialImg.src = testimonials[currentIndex].img;
+  // Fade out effect
+  testimonialCard.classList.add("opacity-0");
+
+  setTimeout(() => {
+    testimonialQuote.innerText = testimonials[currentIndex].quote;
+    testimonialAuthor.innerText = testimonials[currentIndex].author;
+    testimonialImg.src = testimonials[currentIndex].img;
+
+    // Fade in effect
+    testimonialCard.classList.remove("opacity-0");
+  }, 500); // Match this with the duration of the CSS transition
 }
 
-document.getElementById("next-button").addEventListener("click", () => {
-  currentIndex = (currentIndex + 1) % testimonials.length; // Loop back to start
-  updateTestimonial();
-});
-
-document.getElementById("prev-button").addEventListener("click", () => {
-  currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length; // Loop to end
-  updateTestimonial();
-});
-
-// Initialize with the first testimonial
+// Update testimonial on page load
 updateTestimonial();
-//   testi end
 
+// Handle button clicks
+document.getElementById("prev-button").addEventListener("click", () => {
+  currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+  updateTestimonial();
+});
 
+document.getElementById("next-button").addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % testimonials.length;
+  updateTestimonial();
+});
 
 function toggleMenu() {
-  const mobileMenu = document.getElementById('mobileMenu');
-  mobileMenu.classList.toggle('hidden');
+  const mobileMenu = document.getElementById("mobileMenu");
+  mobileMenu.classList.toggle("hidden");
 }
