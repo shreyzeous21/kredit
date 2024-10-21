@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Kredit venture | Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .merriweather-regular {
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="merriweather-regular">
+    <!-- header start -->
+    <header class="top-0 h-auto px-10 z-50 w-full shadow-md">
+      <div class="container mx-auto flex justify-between items-center h-full">
+        <!-- Left section: Logo -->
+        <div class="flex items-center top-0">
+          <img src="/logo.png" alt="Logo" class="h-[5rem] w-auto mr-5" />
+        </div>
+
+        <!-- Hamburger menu (for mobile) -->
+        <div class="flex md:hidden">
+          <button
+            id="hamburger"
+            class="text-black focus:outline-none"
+            onclick="toggleMenu()"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Center section: Menu (hidden on mobile, visible on desktop) -->
+
+        <nav
+          id="navMenu"
+          class="hidden w-[50vw] mt-10 lg:flex h-[12vh] justify-center items-center bg-orange-600"
+        >
+          <ul
+            class="flex flex-col md:flex-row justify-center items-center mx-auto lg:px-0 w-full text-white"
+          >
+            <li
+              class="flex-1 text-center border-b md:border-b-0 md:border-r border-white"
+            >
+              <a href="/" class="hover:text-secondary font-bold">Home</a>
+            </li>
+            <li
+              class="flex-1 text-center border-b md:border-b-0 md:border-r border-white"
+            >
+              <a href="/about.html" class="hover:text-secondary font-bold"
+                >About</a
+              >
+            </li>
+            <li
+              class="flex-1 text-center border-b md:border-b-0 md:border-r border-white"
+            >
+              <a href="/service.html" class="hover:text-secondary font-bold"
+                >Services</a
+              >
+            </li>
+            <li
+              class="flex-1 text-center border-b md:border-b-0 md:border-r border-white"
+            >
+              <a href="/blog.html" class="hover:text-secondary font-bold"
+                >Blog</a
+              >
+            </li>
+            <li class="flex-1 text-center">
+              <a href="/contact.html" class="hover:text-secondary font-bold"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Right section: Buttons (visible on desktop) -->
+        <div class="hidden lg:flex lg:flex-row items-end">
+          <img src="/call.svg" class="bg-blue-900 rounded-full p-1" alt="" />
+          <div class="flex flex-col mx-3">
+            <a href="#" class="text-black font-semibold rounded inline-block"
+              >Call for more info</a
+            >
+            <a href="#" class="text-black font-semibold rounded inline-block"
+              >+91 99674 88300</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile dropdown menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-orange-600 w-full py-5">
+        <ul class="text-white flex flex-col space-y-4 items-center">
+          <li>
+            <a href="/" class="hover:text-secondary font-bold">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" class="hover:text-secondary font-bold"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="/service.html" class="hover:text-secondary font-bold"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="/blog.html" class="hover:text-secondary font-bold">Blog</a>
+          </li>
+          <li>
+            <a href="/contact.html" class="hover:text-secondary font-bold"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- header end -->
+
+<!-- our  services start -->
+<section class="py-12  sm:py-12 lg:py-16">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="max-w-xl mx-auto text-center xl:max-w-2xl">
+            <h2 class="text-3xl font-bold leading-tight  sm:text-4xl xl:text-5xl mb-6">We are just
+                getting started!</h2>
+            <p class="mb-4">We are creating a tool that helps you be more productive and efficient when building
+                websites and webapps</p>
+
+        </div>
+        <div
+            class="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-12 lg:mt-20 sm:text-left">
+            <div class="relative">
+                <div class="absolute -inset-1">
+                    <div
+                        class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                    <div class="p-9"><svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 8L20 8" stroke="#111827" stroke-width="2" stroke-linecap="round"></path>
+                            <path d="M4 16L14 16" stroke="#111827" stroke-width="2" stroke-linecap="round"></path>
+                            <ellipse cx="7" cy="8" rx="3" ry="3" transform="rotate(90 7 8)" stroke="#111827"
+                                stroke-width="2" stroke-linecap="round"></ellipse>
+                            <ellipse cx="17" cy="16" rx="3" ry="3" transform="rotate(90 17 16)" stroke="#111827"
+                                stroke-width="2" stroke-linecap="round"></ellipse>
+                        </svg>
+                        <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Realtime Collaboration</h3>
+                        <p class="mt-6 text-base text-gray-600">Collaborate in realtime with other editors in a
+                            project. See what othe editors are doing and edit even a simple text together</p>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                <div class="p-9"><svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="13" y="14" width="2" height="2" rx="1" fill="#111827"></rect>
+                        <rect x="7" y="11" width="2" height="6" rx="1" fill="#111827"></rect>
+                        <rect x="11" y="13" width="2" height="6" rx="1" transform="rotate(90 11 13)" fill="#111827">
+                        </rect>
+                        <rect x="16" y="12" width="2" height="2" rx="1" fill="#111827"></rect>
+                        <path
+                            d="M14 8V8C14 7.58326 14 7.37488 13.9655 7.19144C13.8455 6.5546 13.4245 6.01534 12.8358 5.74455C12.6662 5.66654 12.464 5.616 12.0597 5.51493L12 5.5C11.5388 5.3847 11.3082 5.32706 11.1171 5.233C10.5686 4.96315 10.1737 4.45731 10.0449 3.85979C10 3.65151 10 3.41382 10 2.93845V2"
+                            stroke="#111827" stroke-width="2" stroke-linecap="round"></path>
+                        <path
+                            d="M3 14C3 11.4412 3 10.1618 3.61994 9.28042C3.77954 9.05351 3.96572 8.85041 4.17372 8.6763C4.98164 8 6.15442 8 8.5 8H15.5C17.8456 8 19.0184 8 19.8263 8.6763C20.0343 8.85041 20.2205 9.05351 20.3801 9.28042C21 10.1618 21 11.4412 21 14C21 16.5588 21 17.8382 20.3801 18.7196C20.2205 18.9465 20.0343 19.1496 19.8263 19.3237C19.0184 20 17.8456 20 15.5 20H8.5C6.15442 20 4.98164 20 4.17372 19.3237C3.96572 19.1496 3.77954 18.9465 3.61994 18.7196C3 17.8382 3 16.5588 3 14Z"
+                            stroke="#111827" stroke-width="2"></path>
+                    </svg>
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">History of Edits</h3>
+                    <p class="mt-6 text-base text-gray-600">Go back and forth your history of changes and
+                        restore your designs to any point in time</p>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-1">
+                    <div
+                        class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                    <div class="p-9"><svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 8L20 8" stroke="#111827" stroke-width="2" stroke-linecap="round"></path>
+                            <path d="M4 16L14 16" stroke="#111827" stroke-width="2" stroke-linecap="round"></path>
+                            <ellipse cx="7" cy="8" rx="3" ry="3" transform="rotate(90 7 8)" stroke="#111827"
+                                stroke-width="2" stroke-linecap="round"></ellipse>
+                            <ellipse cx="17" cy="16" rx="3" ry="3" transform="rotate(90 17 16)" stroke="#111827"
+                                stroke-width="2" stroke-linecap="round"></ellipse>
+                        </svg>
+                        <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Integrations</h3>
+                        <p class="mt-6 text-base text-gray-600">Step up your designs and workflow with
+                            integrations with your favourite tools such as mailchimp, slack, jira etc</p>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                <div class="p-9"><svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="13" y="14" width="2" height="2" rx="1" fill="#111827"></rect>
+                        <rect x="7" y="11" width="2" height="6" rx="1" fill="#111827"></rect>
+                        <rect x="11" y="13" width="2" height="6" rx="1" transform="rotate(90 11 13)" fill="#111827">
+                        </rect>
+                        <rect x="16" y="12" width="2" height="2" rx="1" fill="#111827"></rect>
+                        <path
+                            d="M14 8V8C14 7.58326 14 7.37488 13.9655 7.19144C13.8455 6.5546 13.4245 6.01534 12.8358 5.74455C12.6662 5.66654 12.464 5.616 12.0597 5.51493L12 5.5C11.5388 5.3847 11.3082 5.32706 11.1171 5.233C10.5686 4.96315 10.1737 4.45731 10.0449 3.85979C10 3.65151 10 3.41382 10 2.93845V2"
+                            stroke="#111827" stroke-width="2" stroke-linecap="round"></path>
+                        <path
+                            d="M3 14C3 11.4412 3 10.1618 3.61994 9.28042C3.77954 9.05351 3.96572 8.85041 4.17372 8.6763C4.98164 8 6.15442 8 8.5 8H15.5C17.8456 8 19.0184 8 19.8263 8.6763C20.0343 8.85041 20.2205 9.05351 20.3801 9.28042C21 10.1618 21 11.4412 21 14C21 16.5588 21 17.8382 20.3801 18.7196C20.2205 18.9465 20.0343 19.1496 19.8263 19.3237C19.0184 20 17.8456 20 15.5 20H8.5C6.15442 20 4.98164 20 4.17372 19.3237C3.96572 19.1496 3.77954 18.9465 3.61994 18.7196C3 17.8382 3 16.5588 3 14Z"
+                            stroke="#111827" stroke-width="2"></path>
+                    </svg>
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Publish webpage online</h3>
+                    <p class="mt-6 text-base text-gray-600">Effortlessly publish your webpages online and make
+                        it available to the world with a click of a button</p>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-1">
+                    <div
+                        class="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
+                    </div>
+                </div>
+                <div class="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+                    <div class="p-9"><svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 8L20 8" stroke="#111827" stroke-width="2" stroke-linecap="round"></path>
+                            <path d="M4 16L14 16" stroke="#111827" stroke-width="2" stroke-linecap="round"></path>
+                            <ellipse cx="7" cy="8" rx="3" ry="3" transform="rotate(90 7 8)" stroke="#111827"
+                                stroke-width="2" stroke-linecap="round"></ellipse>
+                            <ellipse cx="17" cy="16" rx="3" ry="3" transform="rotate(90 17 16)" stroke="#111827"
+                                stroke-width="2" stroke-linecap="round"></ellipse>
+                        </svg>
+                        <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Forms and Data Collection
+                        </h3>
+                        <p class="mt-6 text-base text-gray-600">Collect data and information from users with
+                            forms built on windframe and sort through them in a nice interface</p>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden bg-white shadow-md rounded-xl">
+                <div class="p-9"><svg class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="13" y="14" width="2" height="2" rx="1" fill="#111827"></rect>
+                        <rect x="7" y="11" width="2" height="6" rx="1" fill="#111827"></rect>
+                        <rect x="11" y="13" width="2" height="6" rx="1" transform="rotate(90 11 13)" fill="#111827">
+                        </rect>
+                        <rect x="16" y="12" width="2" height="2" rx="1" fill="#111827"></rect>
+                        <path
+                            d="M14 8V8C14 7.58326 14 7.37488 13.9655 7.19144C13.8455 6.5546 13.4245 6.01534 12.8358 5.74455C12.6662 5.66654 12.464 5.616 12.0597 5.51493L12 5.5C11.5388 5.3847 11.3082 5.32706 11.1171 5.233C10.5686 4.96315 10.1737 4.45731 10.0449 3.85979C10 3.65151 10 3.41382 10 2.93845V2"
+                            stroke="#111827" stroke-width="2" stroke-linecap="round"></path>
+                        <path
+                            d="M3 14C3 11.4412 3 10.1618 3.61994 9.28042C3.77954 9.05351 3.96572 8.85041 4.17372 8.6763C4.98164 8 6.15442 8 8.5 8H15.5C17.8456 8 19.0184 8 19.8263 8.6763C20.0343 8.85041 20.2205 9.05351 20.3801 9.28042C21 10.1618 21 11.4412 21 14C21 16.5588 21 17.8382 20.3801 18.7196C20.2205 18.9465 20.0343 19.1496 19.8263 19.3237C19.0184 20 17.8456 20 15.5 20H8.5C6.15442 20 4.98164 20 4.17372 19.3237C3.96572 19.1496 3.77954 18.9465 3.61994 18.7196C3 17.8382 3 16.5588 3 14Z"
+                            stroke="#111827" stroke-width="2"></path>
+                    </svg>
+                    <h3 class="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">Custom Domains</h3>
+                    <p class="mt-6 text-base text-gray-600">Attach your own custom domain to your published
+                        projects or website on windframe</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- our  services end -->
+
+    <!-- footer start -->
+    <footer class="bg-[#014260] text-white lg:h-[55vh] bg-center bg-cover">
+      <div class="mx-auto">
+        <!-- Logo and Tagline -->
+        <div
+          class="flex lg:h-[15vh] bg-black w-[54vw] lg:justify-start bg-transparent justify-center mx-auto lg:mt-0"
+        >
+          <img src="/logo.png" class="pt-2" alt="" />
+        </div>
+
+        <!-- Navigation Links -->
+        <hr
+          class="lg:w-[55vw] my-4 h-[1px] mx-3 lg:mx-auto bg-white border-0"
+        />
+        <nav
+          class="flex flex-col lg:flex-row lg:justify-around justify-center lg:mx-40"
+        >
+          <div class="text-center text-sm my-1 lg:my-0">
+            <a href="/" class="mx-1">Home</a> |
+            <a href="/about.html" class="mx-1">About</a> |
+            <a href="/service.html" class="mx-1">Services</a> |
+            <a href="/blog.html" class="mx-1">Blog</a> |
+            <a href="/contact.html" class="mx-1">Contact</a>
+          </div>
+          <div class="flex justify-center my-1 lg:my-0 space-x-1">
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
+                alt="Instagram"
+                class="w-6 h-6"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"
+                alt="Facebook"
+                class="w-6 h-6"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"
+                alt="X"
+                class="w-6 h-6"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
+                alt="YouTube"
+                class="w-6 h-6"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
+                alt="LinkedIn"
+                class="w-6 h-6"
+            /></a>
+          </div>
+        </nav>
+        <hr
+          class="lg:w-[55vw] my-4 h-[1px] mx-3 lg:mx-auto bg-white border-0"
+        />
+        <div class="flex justify-center flex-col">
+          <p class="text-center text-sm">
+            Kredit Venture (JADS Services Private Limited) NBFC Registration No:
+            N-14 03239
+          </p>
+          <img src="/Layer-1-copy-2.png" alt="" />
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="/script.js"></script>
+  </body>
+</html>

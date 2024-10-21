@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Kredit venture | About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .merriweather-regular {
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="merriweather-regular">
+    <!-- header start -->
+    <header class="top-0 h-auto px-10 z-50 w-full">
+      <div class="container mx-auto flex justify-between items-center h-full">
+        <!-- Left section: Logo -->
+        <div class="flex items-center top-0">
+          <img src="/logo.png" alt="Logo" class="h-[5rem] w-auto mr-5" />
+        </div>
+
+        <!-- Hamburger menu (for mobile) -->
+        <div class="flex md:hidden">
+          <button
+            id="hamburger"
+            class="text-black focus:outline-none"
+            onclick="toggleMenu()"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Center section: Menu (hidden on mobile, visible on desktop) -->
+
+        <nav
+          id="navMenu"
+          class="hidden w-[50vw] mt-10 lg:flex h-[12vh] justify-center items-center bg-orange-600"
+        >
+          <ul
+            class="flex flex-col md:flex-row justify-center items-center mx-auto lg:px-0 w-full text-white"
+          >
+            <li
+              class="flex-1 text-center border-b md:border-b-0 md:border-r border-white"
+            >
+              <a href="/" class="hover:text-secondary font-bold">Home</a>
+            </li>
+            <li
+              class="flex-1 text-center border-b md:border-b-0 md:border-r border-white"
+            >
+              <a href="/about.html" class="hover:text-secondary font-bold"
+                >About</a
+              >
+            </li>
+            <li
+              class="flex-1 text-center border-b md:border-b-0 md:border-r border-white"
+            >
+              <a href="/service.html" class="hover:text-secondary font-bold"
+                >Services</a
+              >
+            </li>
+            <li
+              class="flex-1 text-center border-b md:border-b-0 md:border-r border-white"
+            >
+              <a href="/blog.html" class="hover:text-secondary font-bold"
+                >Blog</a
+              >
+            </li>
+            <li class="flex-1 text-center">
+              <a href="/contact.html" class="hover:text-secondary font-bold"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Right section: Buttons (visible on desktop) -->
+        <div class="hidden lg:flex lg:flex-row items-end">
+          <img src="/call.svg" class="bg-blue-900 rounded-full p-1" alt="" />
+          <div class="flex flex-col mx-3">
+            <a href="#" class="text-black font-semibold rounded inline-block"
+              >Call for more info</a
+            >
+            <a href="#" class="text-black font-semibold rounded inline-block"
+              >+91 99674 88300</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile dropdown menu -->
+      <div id="mobileMenu" class="hidden md:hidden bg-orange-600 w-full py-5">
+        <ul class="text-white flex flex-col space-y-4 items-center">
+          <li>
+            <a href="/" class="hover:text-secondary font-bold">Home</a>
+          </li>
+          <li>
+            <a href="/about.html" class="hover:text-secondary font-bold"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="/service.html" class="hover:text-secondary font-bold"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="/blog.html" class="hover:text-secondary font-bold">Blog</a>
+          </li>
+          <li>
+            <a href="/contact.html" class="hover:text-secondary font-bold"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- footer start -->
+    <footer class="bg-[#014260] text-white lg:h-[55vh] bg-center bg-cover">
+      <div class="mx-auto">
+        <!-- Logo and Tagline -->
+        <div
+          class="flex lg:h-[15vh] bg-black w-[54vw] lg:justify-start bg-transparent justify-center mx-auto lg:mt-0"
+        >
+          <img src="/logo.png" class="pt-2" alt="" />
+        </div>
+
+        <!-- Navigation Links -->
+        <hr
+          class="lg:w-[55vw] my-4 h-[1px] mx-3 lg:mx-auto bg-white border-0"
+        />
+        <nav
+          class="flex flex-col lg:flex-row lg:justify-around justify-center lg:mx-40"
+        >
+          <div class="text-center text-sm my-1 lg:my-0">
+            <a href="/" class="mx-1">Home</a> |
+            <a href="/about.html" class="mx-1">About</a> |
+            <a href="/service.html" class="mx-1">Services</a> |
+            <a href="/blog.html" class="mx-1">Blog</a> |
+            <a href="/contact.html" class="mx-1">Contact</a>
+          </div>
+          <div class="flex justify-center my-1 lg:my-0 space-x-1">
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
+                alt="Instagram"
+                class="w-6 h-6"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png"
+                alt="Facebook"
+                class="w-6 h-6"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png"
+                alt="X"
+                class="w-6 h-6"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
+                alt="YouTube"
+                class="w-6 h-6"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
+                alt="LinkedIn"
+                class="w-6 h-6"
+            /></a>
+          </div>
+        </nav>
+        <hr
+          class="lg:w-[55vw] my-4 h-[1px] mx-3 lg:mx-auto bg-white border-0"
+        />
+        <div class="flex justify-center flex-col">
+          <p class="text-center text-sm">
+            Kredit Venture (JADS Services Private Limited) NBFC Registration No:
+            N-14 03239
+          </p>
+          <img src="/Layer-1-copy-2.png" alt="" />
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="/script.js"></script>
+  </body>
+</html>

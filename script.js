@@ -57,3 +57,26 @@ function toggleMenu() {
   const mobileMenu = document.getElementById("mobileMenu");
   mobileMenu.classList.toggle("hidden");
 }
+
+const toggleButton = document.querySelector('.toggle-button');
+
+// Add event listener for swipe functionality
+function handleSwipe(event) {
+  // Your swipe handling logic here
+}
+
+document.addEventListener('touchstart', handleSwipe);
+
+
+
+function selectButton(selectedButton) {
+  const buttons = document.querySelectorAll('.radio-button');
+
+  buttons.forEach(button => {
+    button.classList.remove('bg-[#014260]', 'text-white', 'border-[#014260]');
+    button.classList.add('bg-transparent', 'text-gray-800', 'border-gray-300');
+  });
+
+  selectedButton.classList.remove('bg-transparent', 'text-gray-800', 'border-gray-300');
+  selectedButton.classList.add('bg-[#014260]', 'text-white', 'border-[#014260]');
+}
