@@ -3,18 +3,18 @@ const testimonials = [
     quote:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque alias nisi enim corrupti aliquid veniam eaque, voluptatum beatae aliquam ea sit nobis cupiditate natus dignissimos ducimus hic voluptate inventore. Facilis!",
     author: "John Doe",
-    img: "/Layer-21.png",
+    img: "/assets/Layer-21.png",
   },
   {
     quote:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque alias nisi enim corrupti aliquid veniam eaque, voluptatum beatae aliquam",
     author: "Jane Smith",
-    img: "/Layer-21.png",
+    img: "/assets/Layer-21.png",
   },
   {
     quote: "Highly recommend to everyone!",
     author: "Michael Johnson",
-    img: "/Layer-21.png",
+    img: "/assets/Layer-21.png",
   },
 ];
 
@@ -58,25 +58,31 @@ function toggleMenu() {
   mobileMenu.classList.toggle("hidden");
 }
 
-const toggleButton = document.querySelector('.toggle-button');
+const toggleButton = document.querySelector(".toggle-button");
 
 // Add event listener for swipe functionality
 function handleSwipe(event) {
   // Your swipe handling logic here
 }
 
-document.addEventListener('touchstart', handleSwipe);
-
-
+document.addEventListener("touchstart", handleSwipe);
 
 function selectButton(selectedButton) {
-  const buttons = document.querySelectorAll('.radio-button');
+  const buttons = document.querySelectorAll(".radio-button");
 
-  buttons.forEach(button => {
-    button.classList.remove('bg-[#014260]', 'text-white', 'border-[#014260]');
-    button.classList.add('bg-transparent', 'text-gray-800', 'border-gray-300');
+  buttons.forEach((button) => {
+    button.classList.remove("bg-[#014260]", "text-white", "border-[#014260]");
+    button.classList.add("bg-transparent", "text-gray-800", "border-gray-300");
   });
 
-  selectedButton.classList.remove('bg-transparent', 'text-gray-800', 'border-gray-300');
-  selectedButton.classList.add('bg-[#014260]', 'text-white', 'border-[#014260]');
+  selectedButton.classList.remove(
+    "bg-transparent",
+    "text-gray-800",
+    "border-gray-300"
+  );
+  selectedButton.classList.add(
+    "bg-[#014260]",
+    "text-white",
+    "border-[#014260]"
+  );
 }
