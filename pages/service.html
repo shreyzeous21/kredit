@@ -32,11 +32,27 @@
   </head>
   <body class="poppins-regular">
     <!-- header start -->
-    <header class="top-0 h-auto px-10 z-50 w-full shadow-md">
+    <header class="top-0 h-auto z-50 w-full shadow-md">
       <div class="container mx-auto flex justify-between items-center h-full">
         <!-- Left section: Logo -->
-        <div class="flex items-center top-0">
+        <div class="flex items-center lg:mr-12">
           <img src="/assets/logo.png" alt="Logo" class="h-[5rem] w-auto mr-5" />
+        </div>
+
+        <div class="md:hidden flex flex-row">
+          <div class="flex items-center">
+            <img
+              src="/assets/call.svg"
+              class="bg-blue-900 rounded-full"
+              alt=""
+            />
+            <a
+              href="#"
+              class="text-black font-semibold items-center rounded inline-block"
+            >
+              +91 99674 88300</a
+            >
+          </div>
         </div>
 
         <!-- Hamburger menu (for mobile) -->
@@ -110,7 +126,7 @@
         </nav>
 
         <!-- Right section: Buttons (visible on desktop) -->
-        <div class="hidden mt-10 lg:flex lg:flex-row items-end">
+        <div class="hidden mt-10 lg:flex lg:flex-row lg:items-end">
           <img
             src="/assets/call.svg"
             class="bg-blue-900 rounded-full p-1"
