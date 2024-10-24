@@ -54,8 +54,12 @@ document.getElementById("next-button").addEventListener("click", () => {
 });
 
 function toggleMenu() {
-  const mobileMenu = document.getElementById("mobileMenu");
-  mobileMenu.classList.toggle("hidden");
+  const mobileMenu = document.getElementById('mobileMenu');
+  const overlay = document.getElementById('mobileMenuOverlay');
+  
+  // Toggle mobile menu and overlay visibility
+  mobileMenu.classList.toggle('hidden');
+  overlay.classList.toggle('hidden');
 }
 
 const toggleButton = document.querySelector(".toggle-button");
